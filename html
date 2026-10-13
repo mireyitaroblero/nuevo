@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web Completa</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación -->
+    <header>
+        <h1>Bienvenidos a Mi Página Web</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#texto">Texto</a></li>
+                <li><a href="#listas">Listas</a></li>
+                <li><a href="#tabla">Tabla</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#formulario">Formulario</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <!-- Contenido Principal -->
+        <main>
+            <section id="inicio">
+                <h2>Inicio</h2>
+                <p>Esta es una página web completa creada como práctica para el CETAC 22.</p>
+            </section>
+
+            <section id="texto">
+                <h2>Elementos de Texto</h2>
+                <h3>Subtítulo de sección</h3>
+                <p>Este es un párrafo de ejemplo. Aquí usamos <strong>texto en negrita</strong>, <em>texto en cursiva</em> y <mark>texto resaltado</mark>.</p>
+                <hr>
+                <p>Una línea divisoria arriba.<br>Y aquí un salto de línea.</p>
+                <blockquote>"La tecnología es mejor cuando une a las personas." — Cita famosa</blockquote>
+                <p>Visita <a href="https://www.w3schools.com" target="_blank">W3Schools</a> para aprender más (se abre en otra pestaña).</p>
+            </section>
+
+            <section id="listas">
+                <h2>Tipos de Listas</h2>
+                
+                <h3>Lista con viñetas</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                </ul>
+
+                <h3>Lista numerada</h3>
+                <ol>
+                    <li>Crear estructura</li>
+                    <li>Agregar estilos</li>
+                    <li>Agregar interactividad</li>
+                </ol>
+
+                <h3>Lista de definiciones</h3>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Lenguaje de marcado para estructurar páginas web.</dd>
+                    <dt>CSS</dt>
+                    <dd>Lenguaje de estilos para dar diseño a las páginas.</dd>
+                    <dt>JavaScript</dt>
+                    <dd>Lenguaje de programación para agregar interactividad.</dd>
+                </dl>
+            </section>
+
+            <section id="tabla">
+                <h2>Tecnologías Web</h2>
+                <table>
+                    <caption>Principales tecnologías de desarrollo web</caption>
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th>Versión</th>
+                            <th>Uso principal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>HTML</td>
+                            <td>5</td>
+                            <td>Estructura y contenido</td>
+                        </tr>
+                        <tr>
+                            <td>CSS</td>
+                            <td>3</td>
+                            <td>Diseño y presentación</td>
+                        </tr>
+                        <tr>
+                            <td>JavaScript</td>
+                            <td>ES2024</td>
+                            <td>Interactividad y lógica</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="multimedia">
+                <h2>Multimedia</h2>
+                <figure>
+                    <img src="img/imagen.jpg" alt="Imagen representativa de desarrollo web" width="400">
+                    <figcaption>Imagen 1: Desarrollo web con código en pantalla.</figcaption>
+                </figure>
+
+                <h3>Video de YouTube</h3>
+                <iframe width="400" height="225" src="https://www.youtube.com/embed/PLVqK0ZbBso" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen></iframe>
+            </section>
+
+            <section id="formulario">
+                <h2>Formulario de Registro</h2>
+                <form id="miFormulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+                    <label for="edad">Edad:</label>
+                    <input type="number" id="edad" name="edad" min="1" max="120">
+
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="">Selecciona tu país</option>
+                        <option value="mx">México</option>
+                        <option value="es">España</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <p>Género:</p>
+                    <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="genero" value="femenino"> Femenino</label>
+                    <label><input type="radio" name="genero" value="otro"> Otro</label>
+
+                    <p>Intereses:</p>
+                    <label><input type="checkbox" name="intereses" value="diseño"> Diseño web</label>
+                    <label><input type="checkbox" name="intereses" value="programacion"> Programación</label>
+                    <label><input type="checkbox" name="intereses" value="bd"> Bases de datos</label>
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+                    <button type="submit">Enviar formulario</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Elemento Desplegable</h2>
+                <div class="desplegable">
+                    <button class="btn-desplegable">Haz clic aquí ▼</button>
+                    <div class="contenido-desplegable">
+                        <p>¡Este es un contenido que se muestra y oculta!</p>
+                    </div>
+                </div>
+
+                <h3>Cambiar tema de página</h3>
+                <button id="botonTema">🌙 Cambiar a modo oscuro</button>
+                <p id="saludo"></p>
+            </section>
+        </main>
+
+        <!-- Barra Lateral -->
+        <aside>
+            <h3>Barra Lateral</h3>
+            <p>Información adicional sobre la página.</p>
+            <p><strong>Datos del alumno:</strong></p>
+            <p>CETAC No. 22<br>Faja de Oro, Chiapas</p>
+        </aside>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2026 Tu Nombre Completo — Práctica de GitHub y Páginas Web — CETAC 22</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
